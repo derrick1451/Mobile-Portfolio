@@ -30,7 +30,7 @@
 
 > Describe your project in 1 or 2 sentences.
 
-**[Mobile Porfolio]** is an html and css site generally containg two sections ie header and hero section
+**[Mobile Porfolio]** is an html and css site generally containg three sections ie header , hero section and work section which includes projects that have worked on.
 
 
 ### Tech Stack <a name="tech-stack"></a>
