@@ -80,7 +80,7 @@ ul li {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  gap: 90px;
+  gap: 10px;
   padding: 25px;
   margin-top: 50px;
   background-color: #e5e5e5;
@@ -92,6 +92,7 @@ ul li {
   border: 1px solid #dfe1e6;
   border-radius: 10px;
   background-color: #fff;
+  margin-top: 70px;
 }
 
 .work .tonic {
