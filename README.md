@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 
 
-<!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -24,18 +23,15 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 Mobile Portfolio <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[Mobile Porfolio]** is an html and css site generally containg two sections ie header and hero section
+**[Mobile Porfolio]** is an html and css site generally containg three sections ie header , hero section and work section which includes projects that have worked on.
 
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -44,23 +40,17 @@
     <li><a href="#">css</a></li>
   </ul>
 </details>
-<!-- Features -->
-
-<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
 
 - [coming soon]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -91,11 +81,10 @@ cd Mobile-Portfolio
 run code .
 #
 
-<!-- AUTHORS -->
+
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Okongo Derrick**
 
@@ -105,10 +94,6 @@ run code .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
-
-
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -118,22 +103,13 @@ Feel free to check the [issues page](https://github.com/derrick1451/Mobile-Portf
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
 
 If you like this project please leave a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-
-<!-- FAQ (optional) -->
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
