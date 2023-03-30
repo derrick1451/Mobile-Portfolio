@@ -24,10 +24,10 @@
 - [📝 License](#license)
 
 
-# 📖 Mobile Portfolio <a name="about-project"></a>
+# 📖 Mobile and Desktop  Portfolio <a name="about-project"></a>
 
 
-**[Mobile Porfolio]** This is the full mobile portfolio and it generally comprises of 5 sections
+**[Mobile and Desktop Porfolio]**  with the help of media queries we have fully made our page more responsive and can now be able to be used on desktop and mobile
 
 
 ### Tech Stack <a name="tech-stack"></a>
