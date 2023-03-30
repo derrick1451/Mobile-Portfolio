@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* header section */
@@ -33,7 +33,7 @@ html {
   background: url(images/header-shapes\ mobile@2x.png);
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100vw;
+  width: 103vw;
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -141,7 +141,7 @@ ul li {
   font-style: normal;
   width: 88px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .year {
@@ -152,13 +152,13 @@ ul li {
   font-style: normal;
   width: 29px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .canopy {
   height: 16px;
   width: 55px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 13px;
   line-height: 16px;
   font-weight: 600;
@@ -169,7 +169,7 @@ ul li {
 
 .paragraph {
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -201,7 +201,7 @@ ul li {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #396df2;
   width: 120px;
   height: 50px;
@@ -240,6 +240,7 @@ ul li {
   padding-top: 100px;
   padding-left: 20px;
   padding-bottom: 100px;
+  width: 103vw;
 }
 
 .about-header {
@@ -281,7 +282,7 @@ ul li {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #396df2;
   font-style: normal;
   margin-top: 20px;
@@ -385,3 +386,123 @@ ul li {
   color: #000;
 }
 /*form section */
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #6070ff;
+  border-top-left-radius: 100px;
+  width: 103vw;
+  position: relative;
+}
+.form-section h4 {
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  margin-top: 120px;
+}
+.form-section p {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 28px;
+  font-family: "poppins", sans-serif;
+  color: #ebebff;
+  padding-left: 24px;
+  margin-top: 20px;
+}
+label {
+  display: none;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.form-container ul {
+  list-style: none;
+}
+
+.form-container input {
+  margin: 10px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  background: #fff;
+  width: 80%;
+  height: 48px;
+  font-size: 17px;
+  color: #172b4d;
+  font-weight: 400;
+  line-height: 20px;
+  font-style: normal;
+  font-family: "poppins", sans-serif;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.form-container textarea {
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 80%;
+  height: 170px;
+  margin-left: 30px;
+  margin-top: 11px;
+  padding: 12px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.form-container textarea:hover,
+.form-container input:hover {
+  border: 1px solid #396df2;
+  border-radius: 8px;
+  text-decoration: underline;
+  text-decoration-color: #396df2;
+  text-decoration-thickness: 2px;
+}
+
+.form-container textarea:focus,
+.form-container input:focus {
+  border-color: #000;
+}
+
+.form-container button {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070ff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.form-container button:hover {
+  text-decoration: underline;
+  text-decoration-color: #396df2;
+  text-decoration-thickness: 2px;
+}
+
+.form-image {
+  width: 242px;
+  position: absolute;
+  margin-left: 142px;
+  top: 27px;
+}
+
+body {
+  margin: 0px;
+}
