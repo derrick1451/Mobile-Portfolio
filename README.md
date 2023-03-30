@@ -27,7 +27,7 @@
 # 📖 Mobile Portfolio <a name="about-project"></a>
 
 
-**[Mobile Porfolio]** is an html and css site generally containg three sections ie header , hero section and work section which includes projects that have worked on.
+**[Mobile Porfolio]** This is the full mobile portfolio and it generally comprises of 5 sections
 
 
 ### Tech Stack <a name="tech-stack"></a>
