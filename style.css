@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Poppins:ital,wght@0,200;0,700;1,500&family=Raleway:wght@200;400;600&display=swap');
 
 * {
   padding: 0;
@@ -625,6 +625,7 @@ label {
 @media (min-width: 768px) {
   body {
     background-color: #e5e5e5e5;
+    overflow-x: hidden;
   }
 
   .desktop-nav {
@@ -634,12 +635,16 @@ label {
     gap: 50px;
   }
 
+  .desktop-nav li a {
+    color: #344563;
+  }
+
   .loose {
     display: none;
   }
 
   .main-section {
-    background-image: url(images/desktop-header.png);
+    background-image: url(images/bg-desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -680,13 +685,15 @@ label {
     grid-template-columns: 90%;
     margin-top: 80px;
     max-width: 100%;
-    column-gap: 30px;
+    gap: 75px;
   }
 
   .work {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: #fff;
+    gap: 30px;
+    padding: 10px 30px;
   }
 
   .lost {
@@ -843,8 +850,20 @@ label {
     grid-template-columns: 50% 50%;
     justify-content: space-evenly;
     height: auto;
-    margin-top: 10vh;
+    margin-top: 8vh;
     border-top-right-radius: 100px;
+    padding: 20px;
+    padding-right: 50px;
+    gap: 20px;
+  }
+
+  .about-header {
+    width: 66%;
+    height: auto;
+  }
+
+  .about-cont {
+    margin-left: 112px;
   }
 
   ul .list-items {
@@ -862,25 +881,25 @@ label {
 
   .list-items1 {
     position: relative;
-    top: 140px;
+    top: 175px;
     right: 100px;
   }
 
   .list-items2 {
     position: relative;
     left: 40px;
-    top: 10px;
+    top: 45px;
   }
 
   .list-items3 {
     position: relative;
     left: 170px;
-    bottom: 120px;
+    bottom: 86px;
   }
 
   .language {
     position: relative;
-    top: 150px;
+    top: 190px;
     right: 45px;
     font-weight: 500;
   }
@@ -917,7 +936,6 @@ label {
     background-image: url(images/contact\ form\ .png);
     background-repeat: no-repeat;
     background-size: 100%;
-    margin-bottom: 30px;
   }
 
   .form-section input {
