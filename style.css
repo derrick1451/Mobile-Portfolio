@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Poppins:ital,wght@0,200;0,700;1,500&family=Raleway:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,700&display=swap');
 
 * {
   padding: 0;
@@ -633,6 +633,12 @@ label {
     justify-content: space-between;
     align-items: center;
     gap: 50px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 
   .desktop-nav li a {
