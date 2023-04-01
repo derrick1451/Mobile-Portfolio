@@ -27,6 +27,7 @@ li {
 a {
   text-decoration: none;
 }
+
 .logo:hover {
   transform: rotate(50deg);
 }
@@ -715,9 +716,9 @@ label {
     padding: 10px;
     margin-right: 190px;
   }
+
   .desktop-image:hover {
     transform: scale(1.1);
-
   }
 
   .work-section h2 {
