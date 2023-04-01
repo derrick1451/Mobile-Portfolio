@@ -28,10 +28,6 @@ a {
   text-decoration: none;
 }
 
-.logo:hover {
-  transform: rotate(50deg);
-}
-
 .pop-up {
   display: none;
   transition: 0.4s;
