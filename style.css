@@ -83,6 +83,7 @@ a {
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-style: normal;
+  animation: rotate 2s 2 linear;
 }
 
 .heading {
@@ -964,19 +965,19 @@ label {
   }
 }
 
-.logo {
-  animation: rotate 2s 2 linear;
-}
 @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+
   from {
     color: blue;
   }
+
   to {
     color: yellow;
   }
