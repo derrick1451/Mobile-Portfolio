@@ -27,6 +27,9 @@ li {
 a {
   text-decoration: none;
 }
+.logo:hover {
+  transform: rotate(50deg);
+}
 
 .pop-up {
   display: none;
@@ -711,6 +714,10 @@ label {
     width: 100%;
     padding: 10px;
     margin-right: 190px;
+  }
+  .desktop-image:hover {
+    transform: scale(1.1);
+
   }
 
   .work-section h2 {
