@@ -713,6 +713,10 @@ label {
     margin-right: 190px;
   }
 
+  .desktop-image:hover {
+    transform: scale(1.1);
+  }
+
   .work-section h2 {
     font-size: 40px;
     width: 450px;
