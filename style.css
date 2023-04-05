@@ -10,6 +10,7 @@
 .wrapper {
   height: 100%;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .desktop-nav {
@@ -135,7 +136,7 @@ a {
 .main-section {
   display: flex;
   flex-direction: column;
-  background-image: url(images/header.png);
+  background-image: url(/images/header-shapes\ mobile.png);
   height: auto;
   width: 100vw;
   background-repeat: no-repeat;
