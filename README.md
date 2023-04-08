@@ -44,7 +44,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- (https://derrick1451.github.io/Mobile-Portfolio/)
+-[live link] (https://derrick1451.github.io/Mobile-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
