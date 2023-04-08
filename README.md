@@ -28,6 +28,8 @@
 
 
 **[Mobile and Desktop Porfolio]**  with the help of media queries we have fully made our page more responsive and can now be able to be used on desktop and mobile
+## loom video (project description)
+[project description](https://www.loom.com/share/922af64befd84002969a7b880398b7e6)
 
 
 ### Tech Stack <a name="tech-stack"></a>
