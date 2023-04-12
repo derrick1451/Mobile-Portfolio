@@ -137,7 +137,6 @@ a {
   flex-direction: column;
   background-image: url(images/header-shapes\ mobile.png);
   height: auto;
-  width: 100vw;
   background-repeat: no-repeat;
 }
 
