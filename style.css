@@ -9,7 +9,6 @@
 
 .wrapper {
   height: 100%;
-  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -44,14 +43,14 @@ a {
 
 .active-pop-up {
   display: block;
-  height: 5010px;
+  height: 783%;
   width: 100vw;
   position: absolute;
   background-color: #6070ff;
   top: 0;
   left: 0;
   padding: 50px 20px;
-  transition: 0.4s;
+  transition: 2s;
   z-index: 3;
   backdrop-filter: blur(6px);
   mix-blend-mode: multiply;
