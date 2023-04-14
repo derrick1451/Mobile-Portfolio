@@ -27,7 +27,7 @@
 # 📖 Mobile and Desktop  Portfolio <a name="about-project"></a>
 
 
-**[Mobile and Desktop Porfolio]**  with the help of media queries we have fully made our page more responsive and can now be able to be used on desktop and mobile, We also added a mobile overlay for the navigation elements
+**[Mobile and Desktop Porfolio]**  We implemented the pop-up window dynamically by using javascript and also created the work-section dynamically through using objects
 
 
 ### Tech Stack <a name="tech-stack"></a>
