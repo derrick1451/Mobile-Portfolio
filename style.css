@@ -141,6 +141,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -152,7 +153,107 @@ a {
 .thumbs-up {
   width: 18px;
 }
-/*work section */
+
+/* work section */
+.over-lay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(193, 199, 208, 0.9);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+  padding: 10px;
+}
+
+.over-lay-pop {
+  display: flex;
+}
+
+.modal {
+  display: none;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #dfe1e6;
+  padding: 1rem;
+  margin: 0 2rem;
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+#times {
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.show-card {
+  display: flex;
+}
+
+.pop-up-image img {
+  width: 50%;
+}
+
+.d-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body p {
+  color: #344563;
+}
+
+.d-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.d-links .btn {
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 1px;
+}
+
+.live-button {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 1rem;
+  border: none;
+}
+
+.btn-flexs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 6px 6px;
+  border: 1px solid #6070ff;
+  color: #6070ff;
+  background-color: #fff;
+}
+
+.btn-flexs:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.btn-flexs:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.btn-flexs:disabled {
+  background: #5e6c84;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr;
@@ -160,6 +261,7 @@ a {
   gap: 4rem;
   justify-content: center;
 }
+
 .work {
   border: 1px solid #dfe1e6;
   border-radius: 1rem;
@@ -167,9 +269,11 @@ a {
   flex-direction: column;
   padding: 1rem;
 }
+
 .project-details {
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
+
 .project-title {
   font-size: 2rem;
   font-weight: 700;
@@ -177,8 +281,8 @@ a {
   font-family: "Poppins", sans-serif;
   line-height: 44px;
   color: #172b4d;
-
 }
+
 .dot {
   width: 8px;
   height: 8px;
@@ -192,19 +296,20 @@ a {
   gap: 1rem;
   margin-top: 10px;
 }
+
 .stack-year .canopy {
   font-size: 1rem;
-  color:#344563;
-  line-height: 1rem
-  ;
+  color: #344563;
+  line-height: 1rem;
 }
+
 .stack-year .stack,
 .stack-year .year {
-  color: #7A869A;
-  font-size: .9rem;
+  color: #7a869a;
+  font-size: 0.9rem;
   line-height: 1rem;
-
 }
+
 .paragraph {
   margin-top: 1.5rem;
   font-size: 1rem;
@@ -214,6 +319,7 @@ a {
   line-height: 1.5rem;
   color: #344563;
 }
+
 .link-btns {
   display: flex;
   font-size: 1rem;
@@ -221,6 +327,7 @@ a {
   gap: 1.5rem;
   margin-top: 1rem;
 }
+
 .link-btns li {
   background: #ebebff;
   border-radius: 10px;
@@ -228,8 +335,8 @@ a {
   font-size: 12px;
   border: 1px solid #ebebff;
   padding: 4px 12px;
-
 }
+
 .project-button {
   border: 1px solid #396df2;
   font-size: 1.2rem;
@@ -260,71 +367,33 @@ a {
 
 .project-button:disabled {
   background: #5e6c84;
-} 
-.modal {
-  display: none;
-  background-color: #C1C7D0;
-  justify-content: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  bottom: -1px;
-  padding: 1rem;
 }
-.show-cards {
-  display: flex;
-}
-.modal .card {
-  background-color: #fff;
-  /* position: absolute; */
-  left: 1rem;
-  right: 1rem;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-  border: 1px solid #dfe1e6;
-  border-radius: 1rem;
-}
+
 .modal .title-pop {
   display: flex;
-  gap: 15rem;
+  gap: 10rem;
   align-items: center;
 }
+
 .title-pop h2 {
   font-size: 2rem;
-  color: #172B4D;
+  color: #172b4d;
 }
+
 .title-pop div {
   font-size: 1.8rem;
-  color: #67798E;
+  color: #67798e;
 }
+
 .card img {
   margin: 15px 0;
 }
+
 .card .link-btns {
   margin: 15px 0;
 }
-.card .live-buttons {
-  display: flex;
-  gap: 30px;
-  margin: 10px 0;
-  border: none;
-  background-color: #fff;
-}
-.card .btn-flex {
-  display: flex;
-  align-items: center;
-  width: 170px;
-  height: 50px;
-  font-size: 15px;
-  padding: 10px 10px;
-  gap: 10px;
-  border: 1px solid #6070FF;
-  border-radius: 8px;
-  color: #6070FF;
-  background-color: #fff;
-}
-/*About me section*/
+
+/* About me section */
 .about-me {
   display: flex;
   flex-direction: column;
@@ -632,6 +701,10 @@ label {
     gap: 50px;
   }
 
+  .modal {
+    width: 60%;
+  }
+
   .nav-bar {
     display: flex;
     justify-content: space-around;
@@ -698,7 +771,7 @@ label {
     gap: 30px;
     padding: 10px 30px;
   }
-  
+
   .project-image {
     display: inline;
     width: 100%;
