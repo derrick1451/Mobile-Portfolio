@@ -2,8 +2,9 @@ const hamburger = document.querySelector('.loose');
 const popUp = document.querySelector('.pop-up');
 const closeIcon = document.querySelector('.close-icon');
 const navLinks = document.querySelectorAll('.nav-links');
-const container = document.querySelector('.projects')
-const modal = document.querySelector('.modal')
+const container = document.querySelector('.projects');
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.over-lay');
 
 hamburger.addEventListener('click', () => {
   popUp.classList.toggle('active-pop-up');
@@ -28,10 +29,10 @@ const cards = [{
   stack: 'Back End Dev',
   year: '2015',
   technology: ['html', 'css', 'javascript'],
-  button: 'See Project'
+  button: 'See Project',
 },
 {
-  id:2,
+  id: 2,
   image: 'images/Snapshoot Portfolio (1).png',
   title: 'Multi-Post Stories',
   paragraph: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
@@ -39,21 +40,21 @@ const cards = [{
   stack: 'Full Stack Dev',
   year: '2015',
   technology: ['html', 'ruby on rails', 'css', 'javascript'],
-  button: 'See Project'
+  button: 'See Project',
 },
 {
-  id:3,
-  image:'images/Snapshoot Portfolio (2).png',
+  id: 3,
+  image: 'images/Snapshoot Portfolio (2).png',
   title: 'Facebook 360',
   paragraph: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
   canopy: 'FACEBOOK',
   stack: 'Full Stack Dev',
   year: '2015',
   technology: ['html', 'ruby on rails', 'css', 'javascript'],
-  button: 'See Project'
+  button: 'See Project',
 },
 {
-  id:4,
+  id: 4,
   image: 'images/Snapshoot Portfolio (3).png',
   title: 'Uber Navigation',
   paragraph: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
@@ -61,8 +62,8 @@ const cards = [{
   stack: 'Lead Developer',
   year: '2015',
   technology: ['html', 'ruby on rails', 'css', 'javascript'],
-  button: 'See Project'
-}]
+  button: 'See Project',
+}];
 
 function generateProduct() {
   container.innerHTML = cards.map((product) => `
@@ -88,19 +89,20 @@ function generateProduct() {
 </div>
 `).join('');
 }
-generateProduct()
-const buttons = document.querySelectorAll('.project-button')
-buttons.forEach((button)=>{
-  button.addEventListener('click',(e)=>{
-    const id = parseFloat(e.target.id);
-    const search = cards.find((x) => x.id === id);
-    if(search !== undefined){
-      modal.classList.toggle('show-cards')
-      modal.innerHTML = `
-      <div class='card'>
-      <div class='title-pop'>
+generateProduct();
+function generateModal() {
+  const buttons = document.querySelectorAll('.project-button');
+  buttons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      const id = parseFloat(e.target.id);
+      const search = cards.find((x) => x.id === id);
+      if (search !== undefined) {
+        modal.classList.toggle('show-card');
+        overlay.classList.toggle('over-lay-pop');
+        modal.innerHTML = `
+      <div class='d-header'>
       <h2>${search.title}</h2>
-      <div>x</div>
+      <div id="times">&times</p></div>
       </div>
       <div class="stack-year">
       <h3 class="canopy">${search.canopy}</h3>
@@ -113,16 +115,27 @@ buttons.forEach((button)=>{
   <img src='${search.image}' alt="project 1" >
   </div>
   <div>
+  <div class='card-body'>
  <p>${search.paragraph}</p>
- </div>
- <ul class="link-btns">
+ <div class='card-links'>
+ <ul class="d-links">
  ${search.technology.map((x) => `<li class="btn">${x}</li>`).join('')}
  </ul>
- <div class='live-buttons'>
- <button class='btn-flex'>see live <img src='images/last1.png' alt="project 1>"</button>
- <button class='btn-flex'>see source <img src='images/last.png' alt="project 1"> </button>
+ <div class='live-button'>
+ <button class='btn-flexs'>see live <img src='images/last1.png' alt="project 1>"</button>
+ <button class='btn-flexs'>see source <img src='images/last.png' alt="project 1"> </button>
  </div>
-      </div>`
-    }
-  })
-})
+ </div>
+ </div>
+      </div>`;
+      }
+    });
+  });
+}
+generateModal();
+modal.addEventListener('click', (e) => {
+  if (e.target.id !== 'times') return;
+
+  modal.classList.toggle('show-card');
+  overlay.classList.toggle('over-lay-pop');
+});
