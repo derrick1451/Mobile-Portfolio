@@ -22,7 +22,7 @@ navLinks.forEach((nav) => {
 });
 const cards = [{
   id: 1,
-  image: 'images/Snapshoot Portfolio.png',
+  image: 'images/desktop1.png',
   title: 'Tonic',
   paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   canopy: 'CANOPY',
@@ -33,35 +33,35 @@ const cards = [{
 },
 {
   id: 2,
-  image: 'images/Snapshoot Portfolio (1).png',
+  image: 'images/desktop2.png',
   title: 'Multi-Post Stories',
   paragraph: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
   canopy: 'FACEBOOK',
   stack: 'Full Stack Dev',
   year: '2015',
-  technology: ['html', 'ruby on rails', 'css', 'javascript'],
+  technology: ['html', 'css', 'javascript'],
   button: 'See Project',
 },
 {
   id: 3,
-  image: 'images/Snapshoot Portfolio (2).png',
+  image: 'images/desktop3.png',
   title: 'Facebook 360',
   paragraph: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
   canopy: 'FACEBOOK',
   stack: 'Full Stack Dev',
   year: '2015',
-  technology: ['html', 'ruby on rails', 'css', 'javascript'],
+  technology: ['html', 'css', 'javascript'],
   button: 'See Project',
 },
 {
   id: 4,
-  image: 'images/Snapshoot Portfolio (3).png',
+  image: 'images/destop4.png',
   title: 'Uber Navigation',
   paragraph: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
   canopy: 'Uber',
   stack: 'Lead Developer',
   year: '2015',
-  technology: ['html', 'ruby on rails', 'css', 'javascript'],
+  technology: ['html', 'css', 'javascript'],
   button: 'See Project',
 }];
 
@@ -102,7 +102,7 @@ function generateModal() {
         modal.innerHTML = `
       <div class='d-header'>
       <h2>${search.title}</h2>
-      <div id="times">&times</p></div>
+      <div id="times">&times</div>
       </div>
       <div class="stack-year">
       <h3 class="canopy">${search.canopy}</h3>
@@ -112,7 +112,7 @@ function generateModal() {
       <h4 class="year">${search.year}</h4>
   </div>
   <div class="pop-up-image">
-  <img src='${search.image}' alt="project 1" >
+  <img class='modal-img' src='${search.image}' alt="project 1" >
   </div>
   <div>
   <div class='card-body'>
