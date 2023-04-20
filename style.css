@@ -10,7 +10,10 @@
 .wrapper {
   height: 100%;
   overflow-x: hidden;
+  position: relative;
 }
+
+/* header section */
 
 .desktop-nav {
   display: none;
@@ -86,6 +89,39 @@ a {
   animation: rotate 2s 2 linear;
 }
 
+.close {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  z-index: 6;
+  color: #fff;
+}
+
+/* hero section */
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/header-shapes\ mobile.png);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 12px;
+  padding-left: 30px;
+}
+
+.thumbs-up {
+  width: 18px;
+}
+
 .heading {
   width: 327px;
   height: 150px;
@@ -98,16 +134,6 @@ a {
   color: #172b4d;
   padding-left: 30px;
   margin-top: 80px;
-}
-
-.close {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  font-size: 20px;
-  z-index: 6;
-  color: #fff;
 }
 
 .intro-1 {
@@ -132,105 +158,146 @@ a {
   padding-left: 30px;
 }
 
-.main-section {
+/* work section */
+.over-lay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(193, 199, 208, 0.9);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.over-lay-pop {
+  display: flex;
+}
+
+.modal {
+  background-color: #fff;
+  margin: 10px auto;
+  padding: 1rem;
+  width: 89%;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.card-body {
   display: flex;
   flex-direction: column;
-  background-image: url(images/header-shapes\ mobile.png);
-  height: auto;
-  background-repeat: no-repeat;
 }
 
-.desktop-image {
-  display: none;
-}
-
-.desktop {
-  display: none;
-}
-
-.desktop-paragraph,
-.facebook,
-.front-end {
-  display: none;
-}
-
-.facebook2,
-.front-end2,
-.desktop-paragraph2,
-.header-facebook {
-  display: none;
-}
-
-.headerz,
-.uber,
-.year-1,
-.desktop-paragraph3,
-.lead-dev {
-  display: none;
-}
-
-.nav-links {
+.d-header {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
-  padding-left: 30px;
 }
 
-.thumbs-up {
-  width: 18px;
+.d-header h2 {
+  font-size: 2rem;
 }
 
+.card-body p {
+  font-size: 15px;
+  color: #344563;
+}
+
+.d-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.d-links .btn {
+  color: #6070ff;
+  background: #ebebff;
+  border-radius: 5px;
+  padding: 3px 10px;
+}
+
+.live-button {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  border: none;
+  gap: 16px;
+}
+
+.btn-flexs {
+  display: flex;
+  color: #6070ff;
+  align-items: center;
+  padding: 0 6px;
+  border: none;
+  border: 1px solid #6070ff;
+  height: 40px;
+  gap: 8px;
+  justify-content: center;
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: #fff;
+  width: 160px;
+}
+
+.btn-flexs:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.btn-flexs:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.btn-flexs:disabled {
+  background: #5e6c84;
+}
+
+#times {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.show-card {
+  display: flex;
+}
+
+.modal-img {
+  width: 80%;
+  margin: 20px 15px;
+}
+
+/* cards section */
 .projects {
   display: grid;
   grid-template-columns: 1fr;
+  margin: 6rem 2.5rem 3rem 2.5rem;
+  gap: 4rem;
   justify-content: center;
-  gap: 30px;
 }
 
 .work {
+  border: 1px solid #dfe1e6;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  border: 1px solid #dfe1e6;
-  align-items: center;
-  justify-content: center;
-  border-radius: 16px;
-  text-align: left;
+  padding: 1rem;
 }
 
-.work-image {
-  padding: 16px;
+.project-details {
+  margin-top: 0.8rem;
 }
 
-.header {
-  font-size: 32px;
+.project-title {
+  font-size: 2rem;
   font-weight: 700;
   font-style: normal;
   font-family: "Poppins", sans-serif;
   line-height: 44px;
   color: #172b4d;
-  width: 180px;
-  margin-right: 120px;
-}
-
-.work-flow {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  height: 40px;
-  margin-right: 40px;
-}
-
-.canopy {
-  height: 16px;
-  width: 55px;
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 600;
-  font-style: normal;
-  color: #344563;
-  margin-right: 15px;
 }
 
 .dot {
@@ -240,54 +307,54 @@ a {
   border-radius: 50%;
 }
 
-.back-end {
-  color: #7a869a;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 600;
-  font-style: normal;
-  width: 88px;
-  height: 16px;
-  font-family: "Poppins", sans-serif;
+.stack-year {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 2px;
 }
 
-.year {
+.last-image {
+  width: 14px;
+}
+
+.stack-year .canopy {
+  font-size: 1rem;
+  color: #344563;
+  line-height: 1rem;
+}
+
+.stack-year .stack,
+.stack-year .year {
   color: #7a869a;
-  font-size: 13px;
-  line-height: 16px;
-  font-weight: 600;
-  font-style: normal;
-  width: 29px;
-  height: 16px;
-  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+.project-image {
+  width: 95%;
 }
 
 .paragraph {
-  font-size: 15px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   color: #344563;
-  width: 295px;
-  height: 76px;
-  margin: 12px 0;
 }
 
-.skills {
+.link-btns {
   display: flex;
-  list-style: none;
-  justify-content: space-between;
-  font-size: 12px;
+  font-size: 1rem;
   align-items: center;
-  margin: 0 8px;
-  gap: 11px;
-  height: 30px;
-  width: 200px;
-  margin-right: 100px;
+  gap: 1.5rem;
+  margin-top: 1rem;
 }
 
-.skills li {
+.link-btns li {
   background: #ebebff;
   border-radius: 10px;
   color: #6070ff;
@@ -298,7 +365,7 @@ a {
 
 .project-button {
   border: 1px solid #396df2;
-  font-size: 17px;
+  font-size: 1.2rem;
   font-weight: 500;
   line-height: 24px;
   font-family: "Poppins", sans-serif;
@@ -306,8 +373,8 @@ a {
   width: 120px;
   height: 50px;
   font-style: normal;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 1.4rem;
+  margin-bottom: 1rem;
   text-align: center;
   border-radius: 10px;
   background-color: #fff;
@@ -328,6 +395,31 @@ a {
   background: #5e6c84;
 }
 
+.modal .title-pop {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+.title-pop h2 {
+  font-size: 2rem;
+  color: #172b4d;
+}
+
+.title-pop div {
+  font-size: 1.8rem;
+  color: #67798e;
+}
+
+.card img {
+  margin: 15px 0;
+}
+
+.card .link-btns {
+  margin: 15px 0;
+}
+
+/* About me section */
 .about-me {
   display: flex;
   flex-direction: column;
@@ -635,6 +727,84 @@ label {
     gap: 50px;
   }
 
+  .stack-year {
+    display: flex;
+    gap: 1rem;
+    justify-content: unset;
+  }
+
+  .modal {
+    width: 85%;
+    background-color: #fff;
+    margin: 10px auto;
+    padding: 1rem;
+    flex-direction: column;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .d-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-body p {
+    color: #344563;
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  .d-links {
+    display: flex;
+    gap: 2rem;
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .d-links .btn {
+    color: #6070ff;
+    background: #ebebff;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  .live-button {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    border: none;
+    gap: 16px;
+  }
+
+  .btn-flexs {
+    display: flex;
+    color: #6070ff;
+    align-items: center;
+    padding: 0 6px;
+    border: none;
+    border: 1px solid #6070ff;
+    height: 30px;
+    width: 100%;
+    gap: 6px;
+    font-size: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .btn-flexs:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+
+  .btn-flexs:active {
+    background: #2230d2;
+    color: #fff;
+  }
+
+  .btn-flexs:disabled {
+    background: #5e6c84;
+  }
+
   .nav-bar {
     display: flex;
     justify-content: space-around;
@@ -702,18 +872,39 @@ label {
     padding: 10px 30px;
   }
 
-  .lost {
-    display: none;
+  .pop-up-image {
+    display: flex;
+    justify-content: center;
+
+    /* width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    overflow-y: hidden; */
   }
 
-  .desktop-image {
+  .modal-img {
+    /* width: 90%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: right -59px; */
+    width: 500px;
+    height: 200px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-image {
     display: inline;
     width: 100%;
     padding: 10px;
     margin-right: 190px;
+    margin-top: 3rem;
   }
 
-  .desktop-image:hover {
+  .project-image:hover {
     transform: scale(1.1);
   }
 
