@@ -139,3 +139,15 @@ modal.addEventListener('click', (e) => {
   modal.classList.toggle('show-card');
   overlay.classList.toggle('over-lay-pop');
 });
+const form = document.querySelector('.form-container');
+const email = document.querySelector('#mail');
+const errorMessage = document.querySelector('.error-message');
+form.addEventListener('submit', ((e) => {
+  const emailAuth = email.value;
+  const lowerCase = emailAuth.toLowerCase();
+  if (emailAuth !== lowerCase) {
+    errorMessage.textContent = 'the email should be in lowercase';
+    errorMessage.style.color = 'red';
+    e.preventDefault();
+  }
+}));
