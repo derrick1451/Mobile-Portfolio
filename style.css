@@ -179,7 +179,7 @@ a {
   background-color: #fff;
   margin: 10px auto;
   padding: 1rem;
-  width: 70%;
+  width: 89%;
   flex-direction: column;
   border-radius: 10px;
 }
@@ -200,7 +200,7 @@ a {
 }
 
 .card-body p {
-  font-size: 1rem;
+  font-size: 15px;
   color: #344563;
 }
 
@@ -208,12 +208,14 @@ a {
   display: flex;
   gap: 1rem;
   align-items: center;
+  margin-top: 10px;
 }
 
 .d-links .btn {
   color: #6070ff;
   background: #ebebff;
-  border-radius: 4px;
+  border-radius: 5px;
+  padding: 3px 10px;
 }
 
 .live-button {
@@ -232,12 +234,12 @@ a {
   border: none;
   border: 1px solid #6070ff;
   height: 40px;
-  width: 30%;
   gap: 8px;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 14px;
   border-radius: 8px;
   background-color: #fff;
+  width: 160px;
 }
 
 .btn-flexs:hover {
@@ -308,8 +310,13 @@ a {
 .stack-year {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: space-between;
   margin-top: 10px;
+  gap: 2px;
+}
+
+.last-image {
+  width: 14px;
 }
 
 .stack-year .canopy {
@@ -720,8 +727,14 @@ label {
     gap: 50px;
   }
 
+  .stack-year {
+    display: flex;
+    gap: 1rem;
+    justify-content: unset;
+  }
+
   .modal {
-    width: 50%;
+    width: 85%;
     background-color: #fff;
     margin: 10px auto;
     padding: 1rem;
@@ -737,6 +750,8 @@ label {
 
   .card-body p {
     color: #344563;
+    font-size: 15px;
+    overflow: hidden;
   }
 
   .d-links {
@@ -750,6 +765,7 @@ label {
     color: #6070ff;
     background: #ebebff;
     border-radius: 4px;
+    font-size: 12px;
   }
 
   .live-button {
@@ -856,9 +872,23 @@ label {
     padding: 10px 30px;
   }
 
+  .pop-up-image {
+    display: flex;
+    justify-content: center;
+
+    /* width: 90%;
+    margin: 0 auto;
+    height: 60vh;
+    overflow-y: hidden; */
+  }
+
   .modal-img {
-    width: 50%;
-    margin: 10px 20px;
+    /* width: 90%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: right -59px; */
+    width: 500px;
+    height: 200px;
   }
 
   .card-body {
