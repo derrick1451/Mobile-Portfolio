@@ -27,7 +27,7 @@
 # 📖 Mobile and Desktop  Portfolio <a name="about-project"></a>
 
 
-**[Mobile and Desktop Porfolio]**  We implemented the pop-up window dynamically by using javascript and also created the work-section dynamically through using objects
+**[Mobile and Desktop Porfolio]**  We implemented the pop-up window dynamically by using javascript and also created the work-section dynamically through using objects and we also added a simple form validation on the email input using javascript
 
 
 ### Tech Stack <a name="tech-stack"></a>
