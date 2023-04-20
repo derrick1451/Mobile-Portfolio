@@ -242,6 +242,10 @@ a {
   width: 160px;
 }
 
+.form-section .error-message {
+  font-size: 14px;
+}
+
 .btn-flexs:hover {
   background: #6070ff;
   color: #fff;
