@@ -151,3 +151,18 @@ form.addEventListener('submit', ((e) => {
     e.preventDefault();
   }
 }));
+const data = {
+  name: '',
+  mail: '',
+  message: '',
+};
+const formItems = document.querySelectorAll('.form-container');
+const formData = Array.from(formItems);
+formData.forEach((form) => {
+  form.addEventListener('input', (e) => {
+    const letter = e.target.id;
+    data[letter] = e.target.value;
+    const dataMarker = JSON.stringify(data);
+    localStorage.setItem('data', dataMarker);
+  });
+});
