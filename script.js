@@ -152,10 +152,8 @@ form.addEventListener('submit', ((e) => {
   }
 }));
 
-
-const name = document.querySelector('#name')
-const message = document.querySelector('#message')
-
+const text = document.querySelector('#text');
+const message = document.querySelector('#message');
 
 const data = {
   text: '',
@@ -172,12 +170,11 @@ formData.forEach((form) => {
     localStorage.setItem('data', dataMarker);
   });
 });
-//retrieve data 
-let dataRetrieve = localStorage.getItem('data')
-if(dataRetrieve){
-  const changeUp = JSON.parse(dataRetrieve)
+// retrieve data
+const dataRetrieve = localStorage.getItem('data');
+if (dataRetrieve) {
+  const changeUp = JSON.parse(dataRetrieve);
   text.value = changeUp.text;
   email.value = changeUp.email;
-  message.value = changeUp.message
-
+  message.value = changeUp.message;
 }
