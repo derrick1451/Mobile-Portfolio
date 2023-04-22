@@ -175,9 +175,9 @@ formData.forEach((form) => {
 //retrieve data 
 let dataRetrieve = localStorage.getItem('data')
 if(dataRetrieve){
-  let changeUp = JSON.parse(dataRetrieve)
-  text.value = changeUp.name;
-  email.value = changeUp.mail;
+  const changeUp = JSON.parse(dataRetrieve)
+  text.value = changeUp.text;
+  email.value = changeUp.email;
   message.value = changeUp.message
 
 }
