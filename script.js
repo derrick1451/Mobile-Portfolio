@@ -155,7 +155,7 @@ form.addEventListener('submit', ((e) => {
 const text = document.querySelector('#text');
 const message = document.querySelector('#message');
 
-const data = {
+const datas = {
   text: '',
   email: '',
   message: '',
@@ -165,7 +165,7 @@ const formData = Array.from(formItems);
 formData.forEach((form) => {
   form.addEventListener('input', (e) => {
     const letter = e.target.id;
-    data[letter] = e.target.value;
+    data[letterz] = e.target.value;
     const dataMarker = JSON.stringify(data);
     localStorage.setItem('data', dataMarker);
   });
@@ -174,7 +174,7 @@ formData.forEach((form) => {
 const dataRetrieve = localStorage.getItem('data');
 if (dataRetrieve) {
   const changeUp = JSON.parse(dataRetrieve);
-  text.value = changeUp.text;
+  name.value = changeUp.text;
   email.value = changeUp.email;
   message.value = changeUp.message;
 }
