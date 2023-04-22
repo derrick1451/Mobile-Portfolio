@@ -140,7 +140,7 @@ modal.addEventListener('click', (e) => {
   overlay.classList.toggle('over-lay-pop');
 });
 const form = document.querySelector('.form-container');
-const email = document.querySelector('#mail');
+const email = document.querySelector('#email');
 const errorMessage = document.querySelector('.error-message');
 form.addEventListener('submit', ((e) => {
   const emailAuth = email.value;
@@ -151,9 +151,15 @@ form.addEventListener('submit', ((e) => {
     e.preventDefault();
   }
 }));
+
+
+const name = document.querySelector('#name')
+const message = document.querySelector('#message')
+
+
 const data = {
-  name: '',
-  mail: '',
+  text: '',
+  email: '',
   message: '',
 };
 const formItems = document.querySelectorAll('.form-container');
@@ -166,3 +172,12 @@ formData.forEach((form) => {
     localStorage.setItem('data', dataMarker);
   });
 });
+//retrieve data 
+let dataRetrieve = localStorage.getItem('data')
+if(dataRetrieve){
+  let changeUp = JSON.parse(dataRetrieve)
+  text.value = changeUp.name;
+  email.value = changeUp.mail;
+  message.value = changeUp.message
+
+}
