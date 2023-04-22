@@ -140,7 +140,7 @@ modal.addEventListener('click', (e) => {
   overlay.classList.toggle('over-lay-pop');
 });
 const form = document.querySelector('.form-container');
-const email = document.querySelector('#mail');
+const email = document.querySelector('#email');
 const errorMessage = document.querySelector('.error-message');
 form.addEventListener('submit', ((e) => {
   const emailAuth = email.value;
@@ -151,3 +151,30 @@ form.addEventListener('submit', ((e) => {
     e.preventDefault();
   }
 }));
+
+const text = document.querySelector('#text');
+const message = document.querySelector('#message');
+
+const data = {
+  text: '',
+  email: '',
+  message: '',
+};
+const formItems = document.querySelectorAll('.form-container');
+const formData = Array.from(formItems);
+formData.forEach((form) => {
+  form.addEventListener('input', (e) => {
+    const letter = e.target.id;
+    data[letter] = e.target.value;
+    const dataMarker = JSON.stringify(data);
+    localStorage.setItem('data', dataMarker);
+  });
+});
+// retrieve data
+const dataRetrieve = localStorage.getItem('data');
+if (dataRetrieve) {
+  const changeUp = JSON.parse(dataRetrieve);
+  text.value = changeUp.text;
+  email.value = changeUp.email;
+  message.value = changeUp.message;
+}
