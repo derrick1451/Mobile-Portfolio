@@ -1159,20 +1159,4 @@ label {
   }
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
 
-  to {
-    transform: rotate(360deg);
-  }
-
-  from {
-    color: blue;
-  }
-
-  to {
-    color: yellow;
-  }
-}
