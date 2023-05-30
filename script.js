@@ -22,9 +22,9 @@ navLinks.forEach((nav) => {
 });
 const cards = [{
   id: 1,
-  image: 'images/desktop1.png',
-  title: 'Tonic',
-  paragraph: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+  image: 'images/capstone.png',
+  title: 'Capstone',
+  paragraph: "The capstone1 project, showcases a website about an event called Young Dev's Global summit.Built with Html,CSS and JavaScript",
   canopy: 'CANOPY',
   stack: 'Back End Dev',
   year: '2015',
@@ -172,7 +172,7 @@ formData.forEach((form) => {
 });
 // retrieve data
 const dataRetrieve = localStorage.getItem('data');
-if (dataRetrieve) {
+if (!dataRetrieve) {
   const changeUp = JSON.parse(dataRetrieve);
   text.value = changeUp.text;
   email.value = changeUp.email;
