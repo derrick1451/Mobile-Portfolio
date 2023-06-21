@@ -304,6 +304,12 @@ a {
   color: #172b4d;
 }
 
+.work-flow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .dot {
   width: 8px;
   height: 8px;
@@ -355,7 +361,7 @@ a {
   font-size: 1rem;
   align-items: center;
   gap: 1.5rem;
-  margin-top: 1rem;
+  margin-top: 1.8rem;
 }
 
 .link-btns li {
@@ -837,27 +843,29 @@ label {
 
   .main-section h1 {
     height: auto;
-    width: 900px;
-    font-size: 48px;
+    width: 60%;
+    font-size: 3rem;
   }
 
   .main-section p {
-    width: 800px;
+    width: 60%;
     height: auto;
-    margin-right: 90px;
+    margin-right: 6px;
     margin-top: -5px;
   }
 
   .main-section h3 {
     height: auto;
     padding: 5px;
-    font-size: 16px;
-    margin-right: 700px;
+    width: 60%;
+    font-size: 1rem;
+    margin-right: -45px;
   }
 
   .nav-links {
     padding: 8px;
-    margin-right: 670px;
+    margin-right: -40px;
+    width: 60%;
   }
 
   .projects {
@@ -873,7 +881,7 @@ label {
     grid-template-columns: 1fr 1fr;
     background-color: #fff;
     gap: 30px;
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   .pop-up-image {
@@ -893,22 +901,33 @@ label {
 
   .project-image {
     display: inline;
-    width: 100%;
+    max-width: 100%;
     padding: 10px;
     margin-right: 190px;
-    margin-top: 3rem;
+
+    /* margin-top: 3rem; */
+  }
+
+  .paragraph {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: #344563;
+    width: 295px;
+    height: 76px;
+    margin: 12px 0;
   }
 
   .project-image:hover {
     transform: scale(1.1);
   }
 
-  .work-section h2 {
-    font-size: 40px;
-    width: 450px;
-    position: relative;
-    right: 50px;
-    bottom: 15px;
+  .work-flow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .about-paragraph {
@@ -1149,5 +1168,3 @@ label {
     margin-left: 160px;
   }
 }
-
-
