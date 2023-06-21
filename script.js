@@ -149,24 +149,21 @@ form.addEventListener('submit', ((e) => {
     e.preventDefault();
   }
 }));
-function retrieve(email,message,text){
+function retrieve(email, message, text) {
   const data = {
     email,
     message,
     text,
-  }
-  let forms = JSON.stringify(data)
-  localStorage.setItem('form-data',forms)
+  };
+  const forms = JSON.stringify(data);
+  localStorage.setItem('form-data', forms);
 }
-const submit = document.querySelector('.submit')
-submit.addEventListener('click',()=>{
-  const text = document.querySelector('#text')
-  const email = document.querySelector('#email')
-  const message = document.querySelector('#message')
-  retrieve(email.value,message.value,text.value)
-
-  
-})
+const submit = document.querySelector('.submit');
+const text = document.querySelector('#text');
+const message = document.querySelector('#message');
+submit.addEventListener('click', () => {
+  retrieve(email.value, message.value, text.value);
+});
 
 // retrieve data
 const dataRetrieve = localStorage.getItem('form-data');
