@@ -3,7 +3,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Mobile and Desktop  Portfolio ](#-mobile-and-desktop--portfolio-)
     - [Tech Stack ](#tech-stack-)
   - [🚀 Live Demo ](#-live-demo-)
@@ -39,7 +39,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
--[live link](https://derrick1451.github.io/Mobile-Portfolio/)
+-[Live Demo](https://derrick1451.github.io/Mobile-Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

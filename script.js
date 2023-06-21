@@ -69,16 +69,14 @@ function generateProduct() {
   container.innerHTML = cards.map((product) => `
 <div class="work">
 <img src='${product.image}' alt="project 1" class="project-image">
-<div>
-    <div class="project-details">
-        <h2 class="project-title">${product.title}</h2>
-        <div class="stack-year">
+<div class ="labels">
+<h2 class="project-title">${product.title}</h2>
+    <div class="work-flow work-load">
             <h3 class="canopy">${product.canopy}</h3>
             <div class="dot"></div>
             <h4 class="stack">${product.stack}</h4>
             <div class="dot"></div>
             <h4 class="year">${product.year}</h4>
-        </div>
     </div>
     <p class="paragraph">${product.paragraph}</p>
     <ul class="link-btns">
@@ -151,28 +149,25 @@ form.addEventListener('submit', ((e) => {
     e.preventDefault();
   }
 }));
-
+function retrieve(email, message, text) {
+  const data = {
+    email,
+    message,
+    text,
+  };
+  const forms = JSON.stringify(data);
+  localStorage.setItem('form-data', forms);
+}
+const submit = document.querySelector('.submit');
 const text = document.querySelector('#text');
 const message = document.querySelector('#message');
-
-const data = {
-  text: '',
-  email: '',
-  message: '',
-};
-const formItems = document.querySelectorAll('.form-container');
-const formData = Array.from(formItems);
-formData.forEach((form) => {
-  form.addEventListener('input', (e) => {
-    const letter = e.target.id;
-    data[letter] = e.target.value;
-    const dataMarker = JSON.stringify(data);
-    localStorage.setItem('data', dataMarker);
-  });
+submit.addEventListener('click', () => {
+  retrieve(email.value, message.value, text.value);
 });
+
 // retrieve data
-const dataRetrieve = localStorage.getItem('data');
-if (!dataRetrieve) {
+const dataRetrieve = localStorage.getItem('form-data');
+if (dataRetrieve) {
   const changeUp = JSON.parse(dataRetrieve);
   text.value = changeUp.text;
   email.value = changeUp.email;
