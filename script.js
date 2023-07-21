@@ -25,44 +25,52 @@ const cards = [{
   image: 'images/capstone.png',
   title: 'Capstone',
   paragraph: "The capstone1 project, showcases a website about an event called Young Dev's Global summit.Built with Html,CSS and JavaScript",
-  canopy: 'CANOPY',
-  stack: 'Back End Dev',
-  year: '2015',
-  technology: ['html', 'css', 'javascript'],
+  canopy: 'CAPSTONE',
+  stack: 'Front End',
+  year: '2023',
+  technology: ['Html', 'CSS', 'Javascript'],
   button: 'See Project',
+  source: 'https://github.com/derrick1451/Capstone1',
+  live: 'https://derrick1451.github.io/Capstone1/',
 },
 {
   id: 2,
-  image: 'images/desktop2.png',
-  title: 'Multi-Post Stories',
-  paragraph: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-  canopy: 'FACEBOOK',
-  stack: 'Full Stack Dev',
-  year: '2015',
-  technology: ['html', 'css', 'javascript'],
+  image: 'images/cal.png',
+  title: 'Math-Magician',
+  paragraph: 'math-magician is a single page app made with react thats helps a user to make simple calculation with the calculator and also display random quotes.',
+  canopy: 'REACT',
+  stack: 'Front End',
+  year: '2023',
+  technology: ['React', 'css', 'React-router'],
   button: 'See Project',
+  source: 'https://github.com/derrick1451/math-magician',
+  live: 'https://math-magician-7wfm.onrender.com/',
 },
 {
   id: 3,
-  image: 'images/desktop3.png',
-  title: 'Facebook 360',
-  paragraph: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-  canopy: 'FACEBOOK',
+  image: 'images/bookstore.png',
+  title: 'Book Store',
+  paragraph: 'Bookstore is a web app that allows users to add a book, remove a selected book and display list of books.',
+  canopy: 'REACT-APP',
   stack: 'Full Stack Dev',
-  year: '2015',
-  technology: ['html', 'css', 'javascript'],
+  year: '2023',
+  technology: ['React', 'css', 'React-router'],
   button: 'See Project',
+  source: 'https://github.com/derrick1451/bookstore',
+  live: 'https://bookstore-hynh.onrender.com/',
 },
 {
   id: 4,
-  image: 'images/destop4.png',
-  title: 'Uber Navigation',
-  paragraph: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-  canopy: 'Uber',
-  stack: 'Lead Developer',
-  year: '2015',
-  technology: ['html', 'css', 'javascript'],
+  image: 'images/crop.png',
+  title: 'Todo List',
+  paragraph: 'This is a basic todo List application.Users can Edit,Update and Delete todos.Built with Html,CSS,Webpack and JavaScript.',
+  canopy: 'TODO',
+  stack: 'Full Stack Dev',
+  year: '2023',
+  technology: ['html', 'css', 'javascript', 'webpack'],
   button: 'See Project',
+  source: 'https://github.com/derrick1451/todo-list',
+  live: 'https://derrick1451.github.io/todo-list/',
 }];
 
 function generateProduct() {
@@ -120,8 +128,8 @@ function generateModal() {
  ${search.technology.map((x) => `<li class="btn">${x}</li>`).join('')}
  </ul>
  <div class='live-button'>
- <button class='btn-flexs'>see live <img class='last-img' src='images/last1.png' alt="project 1>"</button>
- <button class='btn-flexs'>see source <img class='last-img' src='images/last.png' alt="project 1"> </button>
+ <button class='btn-flexs'><a href="${search.live}">see live</a> <img class='last-img' src='images/last1.png' alt="project 1>"</button>
+ <button class='btn-flexs'> <a href="${search.source}">see source</a> <img class='last-img' src='images/last.png' alt="project 1"> </button>
  </div>
  </div>
  </div>
@@ -130,6 +138,7 @@ function generateModal() {
     });
   });
 }
+
 generateModal();
 modal.addEventListener('click', (e) => {
   if (e.target.id !== 'times') return;
