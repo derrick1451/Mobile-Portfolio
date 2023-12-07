@@ -84,8 +84,8 @@ run code .
 👤 **Okongo Derrick**
 
 - GitHub: [@githubhandle](https://github.com/derrick1451)
-- Twitter: [@twitterhandle](https://twitter.com/derrick1451)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/okongoderrick)
+- Twitter: [@twitterhandle](https://twitter.com/DerrickHayle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/okongo-derrick/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
