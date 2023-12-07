@@ -819,6 +819,10 @@ label {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #fff;
   }
 
   .desktop-nav li a {
@@ -838,7 +842,7 @@ label {
     align-items: center;
     background-color: #fff;
     border-bottom-left-radius: 90px;
-    height: 100vh;
+    height: 100svh;
   }
 
   .main-section h1 {
