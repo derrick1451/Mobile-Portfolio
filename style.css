@@ -1172,3 +1172,22 @@ label {
     margin-left: 160px;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+  from {
+    color: blue;
+    font-style: italic;
+  }
+
+  to {
+    color: rgb(12, 30, 133);
+    font-style: italic;
+  }
+}
