@@ -24,7 +24,7 @@ const cards = [{
   id: 1,
   image: 'images/capstone.png',
   title: 'Capstone',
-  paragraph: "The capstone1 project, showcases a website about an event called Young Dev's Global summit.Built with Html,CSS and JavaScript",
+  paragraph: "The capstone project showcases a website about an event called Young Dev's Global Summit. Built with HTML, CSS, and JavaScript.",
   canopy: 'CAPSTONE',
   stack: 'Front End',
   year: '2023',
@@ -63,7 +63,7 @@ const cards = [{
   id: 4,
   image: 'images/crop.png',
   title: 'Todo List',
-  paragraph: 'This is a basic todo List application.Users can Edit,Update and Delete todos.Built with Html,CSS,Webpack and JavaScript.',
+  paragraph: 'This is a basic to-do List application. Users can Edit, Update, and Delete todos. Built with HTML,CSS, Webpack and JavaScript.',
   canopy: 'TODO',
   stack: 'Full Stack Dev',
   year: '2023',
@@ -128,8 +128,8 @@ function generateModal() {
  ${search.technology.map((x) => `<li class="btn">${x}</li>`).join('')}
  </ul>
  <div class='live-button'>
- <button class='btn-flexs'><a href="${search.live}">see live</a> <img class='last-img' src='images/last1.png' alt="project 1>"</button>
- <button class='btn-flexs'> <a href="${search.source}">see source</a> <img class='last-img' src='images/last.png' alt="project 1"> </button>
+ <button class='btn-flexs'><a href="${search.live}" target="_blank" rel="noopener">see live</a> <img class='last-img' src='images/last1.png' alt="project 1>"</button>
+ <button class='btn-flexs'> <a href="${search.source}" target="_blank" rel="noopener">see source</a> <img class='last-img' src='images/last.png' alt="project 1"> </button>
  </div>
  </div>
  </div>

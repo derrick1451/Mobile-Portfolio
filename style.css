@@ -123,8 +123,6 @@ a {
 }
 
 .heading {
-  width: 327px;
-  height: 150px;
   font-size: 40px;
   line-height: 52px;
   font-family: "Poppins", sans-serif;
@@ -143,9 +141,11 @@ a {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #344563;
-  width: 327px;
-  height: 146px;
   padding-left: 30px;
+}
+
+.developer {
+  color: #7f8cff;
 }
 
 .intro-2 {
@@ -433,8 +433,6 @@ a {
 .about-me {
   display: flex;
   flex-direction: column;
-  width: 375px;
-  height: 1110px;
   background-color: #fff;
   align-items: center;
 }
@@ -473,6 +471,46 @@ a {
   font-style: normal;
   margin-left: 40px;
   height: 24px;
+}
+
+/* setup frameworks */
+
+.skill-set {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.4rem;
+}
+
+.skillz-data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.skillz-data p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000;
+  height: 24px;
+  width: 237px;
+}
+
+.framework-data {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.framework-item {
+  display: flex;
+  background-color: rgb(247, 247, 248);
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  border-radius: 8px;
 }
 
 .nav-links2 {
@@ -524,6 +562,10 @@ a {
   width: 237px;
 }
 
+.language-icons {
+  width: 50px;
+}
+
 .language {
   display: flex;
   list-style: none;
@@ -547,9 +589,7 @@ a {
 
 .list-items p {
   width: 215px;
-  height: 24px;
   font-weight: 500;
-  line-height: 20px;
   font-size: 15px;
   color: #253858;
   font-style: normal;
@@ -577,8 +617,6 @@ a {
   font-size: 20px;
   line-height: 24px;
   color: #000;
-  height: 24px;
-  width: 237px;
 }
 
 .line {
@@ -1073,7 +1111,7 @@ label {
     border-top-right-radius: 100px;
     padding: 20px;
     padding-right: 50px;
-    gap: 20px;
+    gap: 10px;
   }
 
   .about-header {
@@ -1092,10 +1130,51 @@ label {
     flex-direction: row;
   }
 
+  .skillz-data p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    width: 237px;
+  }
+
   ul .list-items p {
     position: relative;
     top: 40px;
     right: 60px;
+  }
+
+  .skill-set {
+    position: relative;
+    bottom: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .skillz-data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .framework-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .framework-item {
+    display: flex;
+    flex-direction: column;
+    padding: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgb(247, 247, 248);
   }
 
   .list-items1 {
@@ -1114,6 +1193,12 @@ label {
     position: relative;
     left: 170px;
     bottom: 86px;
+  }
+
+  .list-items4 {
+    position: relative;
+    left: 300px;
+    bottom: 220px;
   }
 
   .language {
@@ -1170,5 +1255,25 @@ label {
 
   .form-section button {
     margin-left: 160px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+  from {
+    color: blue;
+    font-style: italic;
+  }
+
+  to {
+    color: rgb(12, 30, 133);
+    font-style: italic;
   }
 }
