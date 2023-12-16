@@ -128,8 +128,8 @@ function generateModal() {
  ${search.technology.map((x) => `<li class="btn">${x}</li>`).join('')}
  </ul>
  <div class='live-button'>
- <button class='btn-flexs'><a href="${search.live}" target="_blank">see live</a> <img class='last-img' src='images/last1.png' alt="project 1>"</button>
- <button class='btn-flexs'> <a href="${search.source}" target="_blank">see source</a> <img class='last-img' src='images/last.png' alt="project 1"> </button>
+ <button class='btn-flexs'><a href="${search.live}" target="_blank" rel="noopener">see live</a> <img class='last-img' src='images/last1.png' alt="project 1>"</button>
+ <button class='btn-flexs'> <a href="${search.source}" target="_blank" rel="noopener">see source</a> <img class='last-img' src='images/last.png' alt="project 1"> </button>
  </div>
  </div>
  </div>

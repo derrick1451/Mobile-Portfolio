@@ -1159,9 +1159,7 @@ label {
     justify-content: space-between;
     padding: 0.5rem;
   }
-
-
-
+  
   .framework-data {
     display: flex;
     flex-direction: row;
